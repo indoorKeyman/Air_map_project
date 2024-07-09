@@ -47,21 +47,7 @@ const Card = styled.div`
   flex-direction: column;
 `;
 
-const Logo = styled.div<{ isActive: boolean }>`
-  width: auto;
-  font-size: 65px;
-  margin-left: 20px;
-  /* text-shadow: 2px 4px 0px grey; */
-  background: ${(props) =>
-    props.isActive
-      ? `linear-gradient(
-    174deg,
-    rgba(118, 226, 255, 1) 41%,
-    rgba(255, 255, 255, 1) 79%)`
-      : "radial-gradient(circle, rgba(240,240,240,0) 0%, rgba(41,41,41,0.764384977623862) 82%)"};
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-`;
+
 
 // "radial-gradient(circle, rgba(240,240,240,0) 0%, rgba(41,41,41,0.764384977623862) 82%)"
 // `linear-gradient(

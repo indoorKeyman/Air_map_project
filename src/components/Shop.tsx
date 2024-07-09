@@ -4,38 +4,16 @@ import styled from "styled-components";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Pagination from "@mui/material/Pagination";
+import {Card, Area, BoldText, ContentsText, Post } from "./Dine";
 
-const Card = styled(motion.div)`
-  margin: 20px 10px;
-  padding: 20px;
-  /* border: 2px black solid; */
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
-`;
+
+
 
 const ShopTitle = styled.div`
   font-size: 27px;
   margin-bottom: 30px;
 `;
 
-const Area = styled.div`
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  line-height: 15px;
-`;
-
-const BoldText = styled.span`
-  font-weight: 600;
-  width: 70px;
-  margin-right: 5px;
-`;
-
-const ContentsText = styled.span`
-  display: block;
-  width: 310px;
-`;
 
 interface IdutyFreeShop {
   response: {
@@ -66,15 +44,15 @@ interface IdutyFreeShop {
   };
 }
 
-const Post = styled(motion.div)`
-  padding: 10px 0px 10px 0px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 40px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+// const Post = styled(motion.div)`
+//   padding: 10px 0px 10px 0px;
+//   background-color: rgba(255, 255, 255, 0.3);
+//   border-radius: 40px;
+//   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// `;
 
 const postVariants = {
   start: {
@@ -139,10 +117,6 @@ function Shop() {
                   <BoldText>위치</BoldText>
                   <ContentsText>{item.lcnm}</ContentsText>
                 </Area>
-                {/* <Area>
-                <BoldText>주요상품</BoldText>
-                <ContentsText>{item.facilityitem}</ContentsText>
-              </Area> */}
               </Card>
             ))}
             <Pagination

@@ -111,7 +111,7 @@ function App() {
           <Wrapper>
             <Outlet />
           </Wrapper>
-          {pageCheck === null ? <Footer /> : null}
+          {/* {pageCheck === null ? <Footer /> : null} */}
         </Container>
       </ThemeProvider>
     </>

@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Pagination } from "@mui/material";
 
-const Card = styled(motion.div)`
+export const Card = styled(motion.div)`
   margin: 20px 10px;
   padding: 20px;
   border-radius: 15px;
@@ -18,20 +18,20 @@ const ShopTitle = styled.div`
   margin-bottom: 30px;
 `;
 
-const Area = styled.div`
+export const Area = styled.div`
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  line-height: 15px;
+  grid-template-columns: 2fr 4fr;
+  /* line-height: 15px; */
 `;
 
-const BoldText = styled.span`
+export const BoldText = styled.span`
   font-weight: 600;
-  width: 70px;
+  width: 100px;
   margin-right: 5px;
 `;
 
-const ContentsText = styled.span`
+export const ContentsText = styled.span`
   display: block;
   width: 310px;
 `;
@@ -65,11 +65,11 @@ interface IdutyFreeShop {
   };
 }
 
-const Post = styled(motion.div)`
+export const Post = styled(motion.div)`
   padding: 10px 0px 10px 0px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 40px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,10 +135,6 @@ function Dine() {
                   <BoldText>위치</BoldText>
                   <ContentsText>{item.lcnm}</ContentsText>
                 </Area>
-                {/* <Area>
-                  <BoldText>주요상품</BoldText>
-                  <ContentsText>{item.facilityitem}</ContentsText>
-                </Area> */}
               </Card>
             ))}
             <Pagination

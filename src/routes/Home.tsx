@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import TapTitle from "../components/TapTitle";
-import Footer from "../components/Footer";
 
 const ComponentsContainer = styled.div`
   display: flex;

@@ -48,14 +48,14 @@ const TextTwo = styled.span`
   text-shadow: 3px 3px 3px ${(props) => props.theme.textShadow};
 `;
 
-const Tabs = styled(motion.div)`
+export const Tabs = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 10px 0px;
   gap: 10px;
 `;
 
-const Tab1 = styled.span<{ isActive: boolean }>`
+export const Tab1 = styled.span<{ isActive: boolean }>`
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -71,7 +71,8 @@ const Tab1 = styled.span<{ isActive: boolean }>`
     display: block;
   }
 `;
-const Tab2 = styled.span<{ isActive: boolean }>`
+
+export const Tab2 = styled.span<{ isActive: boolean }>`
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -150,7 +151,7 @@ function Shopping() {
         <title>Air Map : : : Shopping</title>
       </Helmet>
       <ComponentsContainer>
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {clicked ? (
             <Overlay
               onClick={() => setClicked(false)}
@@ -161,7 +162,7 @@ function Shopping() {
               <ExplainText>Pelase Click 'SHOP' or 'DINE'</ExplainText>
             </Overlay>
           ) : null}
-        </AnimatePresence>
+        </AnimatePresence> */}
         <Box variants={boxVariants} initial="start" animate="end">
           <Img src={dineImg} alt="main" />
           <TextWrapper>

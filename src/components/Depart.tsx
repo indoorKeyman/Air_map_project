@@ -9,10 +9,8 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
 import styled from "styled-components";
+import { TableWrapper } from "./Arrival";
 
-const TableWrapper = styled.div`
-  margin-top: 30px;
-`;
 
 interface Iarrive {
   response: {

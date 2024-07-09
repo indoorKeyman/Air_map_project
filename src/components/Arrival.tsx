@@ -9,8 +9,10 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import styled from "styled-components";
 
-const TableWrapper = styled.div`
+export const TableWrapper = styled.div`
   margin-top: 30px;
+  overflow-y: scroll;
+  height: 80%;
 `;
 interface Iarrive {
   response: {

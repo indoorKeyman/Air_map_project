@@ -1,5 +1,5 @@
 const SERVIECE_KEY = process.env.REACT_APP_API_KEY1;
-const Shop_URL = `https://apis.data.go.kr/B551177/FacilitiesInformation/getFacilitesInfo?serviceKey=${SERVIECE_KEY}&numOfRows=100&pageNo=1&lang=K&lcduty=Y&type=json`;
+const Shop_URL = `https://apis.data.go.kr/B551177/FacilitiesInformation/getFacilitesInfo?serviceKey=${SERVIECE_KEY}&numOfRows=30&pageNo=1&lang=K&lcduty=Y&facilitynm=%EB%A9%B4%EC%84%B8%EC%A0%90&type=json`
 const Dine_URL = `https://apis.data.go.kr/B551177/FacilitiesInformation/getFacilitesInfo?serviceKey=${SERVIECE_KEY}&numOfRows=1000&pageNo=1&lang=K&lcduty=Y&type=json`;
 const Posts = `http://localhost:4000/posts`;
 const W_API_KEY = process.env.REACT_APP_W_API_KEY;

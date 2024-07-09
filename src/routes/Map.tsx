@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import "leaflet/dist/leaflet.css";
 import * as L from "leaflet";
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 import MyComponent from "../components/Mycomponent";
 
